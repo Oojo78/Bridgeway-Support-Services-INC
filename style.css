@@ -1,0 +1,169 @@
+* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ─── Main header ─── */
+.site-header {
+    display: flex;                     /* row layout */
+    justify-content: space-between;    /* push brand left, contact right */
+    align-items: center;               /* vertical centre */
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;                   /* allow wrap on small screens */
+    gap: 20px;
+}
+
+/* ─── Left side: Logo + Name ─── */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    border: 1px solid black;
+}
+
+.brand-text h1 {
+    font-size: 24px;
+    color: #2D5016;
+    margin: 0;
+}
+
+.brand-text p {
+    font-size: 14px;
+    color: #6B6B6B;
+    margin: 4px 0 0;
+    font-style: italic;
+}
+
+/* ─── Right side: Contact + Social ─── */
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Contact links row */
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2D5016;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #C9823D;
+}
+
+.contact-link i {
+    color: #C9823D;
+    font-size: 16px;
+}
+
+/* Social icons row */
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2D5016;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #C9823D;
+    transform: translateY(-2px);
+}
+
+.social-links svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ─── Responsive — stack on mobile ─── */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-contact {
+        align-items: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.border {
+    padding: 2px;
+    width: 100%;
+    background-color: grey;
+}
+li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding: 10px;
+    display: flex;
+}
+.list {
+    margin-top: 10px;
+    margin-left: 25%;
+    font-size: 2rem;
+    text-align: center;
+    gap: 90px;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #2D5016;
+}
+.homepage-img {
+    height: 950px;
+    width: auto;
+}
+h4 {
+    padding: 3px;
+    width: 15%;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
